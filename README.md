@@ -5,18 +5,24 @@ For the Midterm exam project, we are planning to make an Inventory Management Sy
 
 ## Plan for UI
 1. Registration Page <br>
-  ![Screenshot 2024-10-16 005751](https://github.com/user-attachments/assets/0649321e-2165-421e-b5f0-7a03e4663b44)
+![image](https://github.com/user-attachments/assets/44849c97-0c10-4070-b4b6-e7938722070e)
+
 2. Login Page <br>
-  ![Screenshot 2024-10-16 005822](https://github.com/user-attachments/assets/22041498-cf15-40af-8ff8-0f1699f3e157)
+![image](https://github.com/user-attachments/assets/9043c0d8-6099-4d59-8eac-d056f28ce494)
+
 3. Landing page <br>
-    ![Screenshot 2024-10-16 005919](https://github.com/user-attachments/assets/256869fa-5faf-4894-9b17-a96bf8579e20)
+![image](https://github.com/user-attachments/assets/23164da9-9417-431d-9deb-371fbf023b37)
 
 4.Add item page <br>
-    ![Screenshot 2024-10-16 005943](https://github.com/user-attachments/assets/4d7133e8-bc7a-4191-8922-96c78f500c7c)
+![image](https://github.com/user-attachments/assets/ce229eee-f133-49f9-962c-52ae1504ce2d)
+
 5. Update stock page <br>
-   ![image](https://github.com/user-attachments/assets/a3e6a3ee-f801-4647-bb00-609b03a664d4)
+![image](https://github.com/user-attachments/assets/19274daf-337f-43a8-8304-2666d0c111da)
 
 6. Contact page <br>
-    ![image](https://github.com/user-attachments/assets/f7268891-4da2-4293-8869-5a225cd43a03)
+![image](https://github.com/user-attachments/assets/8017df0d-e9b3-4986-a01f-1db762cb7269)
+
+7. Messages page <br>
+![image](https://github.com/user-attachments/assets/71552478-e1fe-4727-94ec-d0e1ce3dbf09)
 
 
