@@ -41,3 +41,6 @@ Route::get('/contact', function () {
 });
 
 Route::get('/messages', [ContactController::class, 'show'])->name('contact.show');
+
+Route::get('/messages/show', [ContactController::class, 'show'])->name('contact.show');
+Route::post('/contacts/submit', [ContactController::class, 'submitMessage'])->name('login.submit');
