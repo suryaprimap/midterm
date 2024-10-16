@@ -27,6 +27,8 @@
 
                         <button class="btn btn-primary">Submit Registration</button>
                     </form>
+
+                    <p class="mt-3 text-center">Already have an account? <br> <a href="/login">Login here</a></p>
                 </div>
             </div>
         </div>

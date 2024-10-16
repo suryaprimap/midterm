@@ -29,6 +29,9 @@
                     @if(session('Failed'))
                     <p class="text-danger">{{ session('Failed') }}</p>
                     @endif
+
+                    <p class="mt-3 text-center">Don't have an account? <br> <a href="/registration">Register here</a></p>
+
                 </div>
             </div>
         </div>

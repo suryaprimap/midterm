@@ -9,7 +9,7 @@
     </div>
 
     <div class="pl-2 pt-10 pb-3 ms-auto d-inline">
-        <a class="btn btn-danger d-inline" href="{{ route('dashboard.add') }}">logout</a>
+        <a class="btn btn-danger d-inline" href="{{ route('login') }}">logout</a>
     </div>
 
 </div>
