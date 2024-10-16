@@ -1,3 +1,5 @@
+# Youtube Link
+https://youtu.be/gG6G3P6GbzI
 # Plan
 For the Midterm exam project, we are planning to make an Inventory Management System, where normal user can see the item's stock but they have to Log In to add, update, or delete the item's. Below is the relationship table for this project <br>
 ## Relationship Table
