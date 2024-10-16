@@ -36,11 +36,7 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('/contact', function () {
-    return view('contacts', ['title' => 'Contact']);
-});
+Route::get('/contact', [ContactController::class, 'show'])->name('contact.show');
+Route::post('/contacts/submit', [ContactController::class, 'submitMessage'])->name('contact.submit');
+Route::get('/messages', [ContactController::class, 'showMessages'])->name('messages.index');
 
-Route::get('/messages', [ContactController::class, 'show'])->name('contact.show');
-
-Route::get('/messages/show', [ContactController::class, 'show'])->name('contact.show');
-Route::post('/contacts/submit', [ContactController::class, 'submitMessage'])->name('login.submit');

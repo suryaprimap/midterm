@@ -1,33 +1,44 @@
-@extends('messages')
+@extends('contacts')
 
 @section('contents')
 
-<div class="d flex">
-    <h4>Messages List</h4>
-</div>
+<section class="content">
 
-<table class="table">
-    <tr>
-        <th>Name</th>
-        <th>email</th>
-        <th>subject</th>
-        <th>message</th>
-    </tr>
-
-    @foreach ($contact as $data)
-    <tr>
-        <td>{{ $data-> name }}</td>
-        <td>{{ $data-> email }}</td>
-        <td>{{ $data-> subject }}</td>
-        <td>{{ $data-> message }}</td>
-        <td>
-            {{-- <a href="{{ route('dashboard.edit', $data->id) }}" class="btn btn-sm btn-warning">Edit</a>
-            <form action="{{ route('dashboard.delete', $data->id) }}" method="post" class="pl-2 d-inline">
-                @csrf
-                <button class="pl-3 btn btn-sm btn-danger">Delete</button>
-            </form>
-        </td>
-    </tr>
-    @endforeach
-</table>
+    <!-- Default box -->
+    <div class="card">
+      <div class="card-body row">
+        <div class="col-5 text-center d-flex align-items-center justify-content-center">
+          <div class="">
+            <h2><strong>Admin</strong></h2>
+            <p class="lead mb-5">123 Testing Ave, Testtown, 9876 NA<br>
+              Phone: +1 234 56789012
+            </p>
+          </div>
+        </div>
+        <div class="col-7">
+          <form action="{{ route('contact.submit') }}" method="POST">
+              @csrf
+              <div class="form-group">
+                  <label for="inputName">Name</label>
+                  <input type="text" id="inputName" name="name" class="form-control" />
+              </div>
+              <div class="form-group">
+                  <label for="inputEmail">E-Mail</label>
+                  <input type="email" id="inputEmail" name="email" class="form-control" />
+              </div>
+                  <div class="form-group">
+                  <label for="inputSubject">Subject</label>
+              <input type="text" id="inputSubject" name="subject" class="form-control" />
+              </div>
+                  <div class="form-group">
+                  <label for="inputMessage">Message</label>
+              <textarea id="inputMessage" class="form-control"  name="message" rows="4" ></textarea>
+              </div>
+                  <div class="form-group">
+                  <input type="submit" class="btn btn-primary" value="Send message">
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
 @endsection

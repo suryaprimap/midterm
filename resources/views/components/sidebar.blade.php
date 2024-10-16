@@ -2,8 +2,8 @@
 
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="../index3.html" class="brand-link">
-      <span class="brand-text font-weight-light">Inventory management
+    <a href="/" class="brand-link pl-3">
+      <span class="brand-text font-weight-medium">Inventory management
       </span>
     </a>
 
@@ -12,7 +12,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="info">
-          <a href="#" class="d-block">Username</a>
+          <a href="#" class="d-block font-weight-medium">{{ Auth::user()->name }}</a>
         </div>
       </div>
 

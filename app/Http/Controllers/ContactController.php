@@ -2,74 +2,68 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Contact;
-use App\Models\messages;
+
+use App\Models\Message;
 use Illuminate\Http\Request;
-use PSpell\Config;
+use Illuminate\Support\Facades\Log;
+
 
 class ContactController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
-    {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
+    function show(){
+        $message = Message::get();
+        return view('contact.show', compact('message'));
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function submit(Request $request)
+    public function submitMessage(Request $request)
     {
-        $contact = new Contact();
-        $contact->name = $request->name;
-        $contact->email = $request->email;
-        $contact->subject = $request->subject;
-        $contact->message = $request->message;
-        $contact->save();
+        Log::info($request->all()); // Log all request data
 
-        return redirect()->route('contact.show');
+        $message = new Message();
+        $message->name = $request->name;
+        $message->email = $request->email;
+        $message->subject = $request->subject;
+        $message->message = $request->message;
+        $message->save();
+
+        return redirect()->route('messages.index')->with('success', 'Message submitted successfully!');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Contact $messages)
+    public function showMessages()
     {
-        $contact = Contact::get();
-        return view('contact.show', compact('messages'));
+        $messages = Message::all();
+
+        // Pass messages to the view
+        return view('messages.index', compact('messages'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Contact $messages)
-    {
-        //
-    }
+    // public function edit(Contact $messages)
+    // {
+    //     //
+    // }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Contact $messages)
-    {
-        //
-    }
+    // /**
+    //  * Update the specified resource in storage.
+    //  */
+    // public function update(Request $request, Contact $messages)
+    // {
+    //     //
+    // }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Contact $messages)
-    {
-        //
-    }
+    // /**
+    //  * Remove the specified resource from storage.
+    //  */
+    // public function destroy(Contact $messages)
+    // {
+    //     //
+    // }
 }
