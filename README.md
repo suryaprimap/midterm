@@ -10,9 +10,10 @@ For the Midterm exam project, we are planning to make an Inventory Management Sy
 3. Home page <br>
   ![image](https://github.com/user-attachments/assets/06764cae-847a-46bb-a5d0-0b02cfe68d08)
 4. Add item page <br>
-   ![image](https://github.com/user-attachments/assets/3b740623-faf0-40c8-9bc0-760c834d1bff)
+![image](https://github.com/user-attachments/assets/961f1eb9-afa3-44aa-b57e-148a335af859)
 5. Update stock page <br>
    ![image](https://github.com/user-attachments/assets/93dee227-403b-4fbe-9c49-e3838181f011)
 6. Contact page <br>
-   ![image](https://github.com/user-attachments/assets/f776df22-33c1-400c-ba8c-6ef6e362dd2f)
+![image](https://github.com/user-attachments/assets/f7268891-4da2-4293-8869-5a225cd43a03)
+
 
