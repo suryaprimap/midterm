@@ -2,11 +2,16 @@
 
 @section('contents')
 
-<div class="d flex">
-    <h4>Inventory List</h4>
-    <div class="pt-2 pb-3 ms-auto">
-        <a class="btn btn-success" href="{{ route('dashboard.add') }}">Add Item</a>
+<div class="d flex pb-4">
+    <h4 class="pb-4">Inventory List</h4>
+    <div class="pt-3 pb-3 ms-auto d-inline">
+        <a class="btn btn-success  d-inline" href="{{ route('dashboard.add') }}">Add Item</a>
     </div>
+
+    <div class="pl-2 pt-10 pb-3 ms-auto d-inline">
+        <a class="btn btn-danger d-inline" href="{{ route('dashboard.add') }}">logout</a>
+    </div>
+
 </div>
 
 <table class="table">
