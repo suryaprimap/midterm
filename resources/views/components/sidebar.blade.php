@@ -3,8 +3,7 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="../index3.html" class="brand-link">
-      <img src="/img/midterm_jpg1.png" alt="Midterm Logo" class="brand-image img elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Midterm
+      <span class="brand-text font-weight-light">Inventory management
       </span>
     </a>
 
@@ -12,15 +11,12 @@
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="/img/midterm_jpg1.png" class="img-circle elevation-2" alt="User Image">
-        </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          <a href="#" class="d-block">Username</a>
         </div>
       </div>
 
-      <!-- SidebarSearch Form -->
+      {{-- <!-- SidebarSearch Form -->
       <div class="form-inline">
         <div class="input-group" data-widget="sidebar-search">
           <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
@@ -30,7 +26,7 @@
             </button>
           </div>
         </div>
-      </div>
+      </div> --}}
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
